@@ -120,7 +120,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form action="contactReview" method="post">
+					<form id="contact-form" action = "contactReview" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Contact Form</span></h2>

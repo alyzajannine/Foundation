@@ -134,7 +134,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form action="donateReview" method="post">
+					<form id="contact-form" action = "donateReview" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Donate Form</span></h2>
@@ -144,18 +144,22 @@
 										<span class="text">Your Name:</span>
 										<%= request.getParameter("name") %>
 									</label>
+									<br><br>
 									<label class="email">
 										<span class="text">Your E-mail:</span>
 										<%= request.getParameter("email") %>
 									</label>
+									<br><br>
 									<label class="phone">
 										<span class="text">Contact Number:</span>
 										<%= request.getParameter("phone") %>
 									</label>
+									<br><br>
 									<label class="message">
 										<span class="text">Type of Donation:</span>
 										<%= request.getParameter("donate") %>
 									</label>
+									<br><br>
 								<div class="cont_btn">
 									<a href="donate.jsp" data-type="submit" class="btn">Back</a>
 									<a href="index1.jsp" data-type="submit" class="btn">Confirm</a>

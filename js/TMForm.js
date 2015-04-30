@@ -31,7 +31,7 @@ $(window).load(function(){
 			
 			function init(){				
 				form
-					.on('submit',formSubmit)
+					//.on('submit',formSubmit)
 					.on('reset',formReset)
 					.on('focus','[data-constraints]',function(){
 						$(this).parents('label').removeClass(opt.emptyClass)
@@ -62,7 +62,7 @@ $(window).load(function(){
 					})					
 					.attr({
 						method:'POST'
-						,action:opt.mailHandlerURL
+						//,action:opt.mailHandlerURL
 					})
 				
 				if($('[data-constraints]',form).length!==0)
@@ -148,7 +148,7 @@ $(window).load(function(){
 				return el.val()||false
 			}
 			
-			function formSubmit(){
+			/*function formSubmit(){
 				var $this=$(this)
 					,modal=$('.'+opt.responseMessageClass)
 					,responseMessage
@@ -201,7 +201,7 @@ $(window).load(function(){
 					})				
 				}				
 				return false
-			}
+			}*/
 			
 			function formReset(){
 				fieldDesolation($('[data-constraints]',form))					

@@ -135,7 +135,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form action="donateReview.jsp" method="post">
+					<form id="contact-form" action = "donateReview.jsp" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Donate Form</span></h2>
@@ -173,7 +173,7 @@
 									<br><br>
 								<div class="cont_btn">
 									<a href="#" data-type="reset" class="btn">Clear</a>
-									<input type = "submit" class = "btn" value ="Send">
+									<a href="#" data-type="submit" class="btn">Send</a>
 								</div>
 						</fieldset> 
 					</form>

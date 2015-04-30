@@ -132,7 +132,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form action = "volunteerReview.jsp" method = "post">
+					<form id="contact-form" action = "volunteerReview.jsp" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Volunteer Form</span></h2>

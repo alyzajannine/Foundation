@@ -143,7 +143,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form action="contactReview.jsp" method="post">
+					<form id="contact-form" action = "contactReview.jsp" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Contact Form</span></h2>
@@ -155,33 +155,42 @@
 											<span class="empty-message">*This field is required.</span>
 											<span class="error-message">*This is not a valid name.</span>
 									</label>
-									<br><br>
 									<label class="email">
 										<span class="text">Your E-mail:</span>
 										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*This is not a valid email.</span>
 									</label>
-									<br><br>
 									<label class="phone">
 										<span class="text">Contact Number:</span>
 										<input type="text" name="phone" placeholder="" value="" data-constraints="@Required @JustNumbers" />
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*This is not a valid phone.</span>
 									</label>
-									<br><br>
 									<label class="message">
 										<span class="text">Message:</span>
-										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=5,max=999999)'></textarea>
+										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*The message is too short.</span>
 									</label>
-									<br><br>
 								<div class="cont_btn">
 									<a href="#" data-type="reset" class="btn">Clear</a>
-									<input type = "submit" class = "btn" value ="Send">
+									<a href="#" data-type="submit" class="btn">Send</a>
 								</div>
 						</fieldset> 
+						<div class="modal fade response-message">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Modal title</h4>
+									</div>
+									<div class="modal-body">
+										You message has been sent! We will be in touch soon.
+									</div>
+								</div>
+							</div>
+						</div>
 					</form>
 				</div>
 				<div class="grid_6 preffix_1">
