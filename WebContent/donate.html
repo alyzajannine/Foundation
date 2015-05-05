@@ -9,10 +9,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/contact-form.css">
 
-	<script>
-		alert("You must log in or register first to continue.")
-		window.location = "login1.jsp";
-	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-migrate-1.2.1.js"></script>
 	<script src="js/script.js"></script>
@@ -94,7 +90,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form id="contact-form">
+					<form id="contact-form" action = "donateReview.jsp" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Donate Form</span></h2>

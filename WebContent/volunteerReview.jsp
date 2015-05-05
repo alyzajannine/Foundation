@@ -27,6 +27,24 @@
     .hoverable:hover .hover {
       display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
     }
+    .empty-message,
+ .error-message {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  color: #fa5555;
+  height: 0;
+  overflow: hidden;
+  font-size: 11px;
+  -webkit-transition: 0.3s ease-in height;
+  transition: 0.3s ease-in height;
+  z-index: 99;
+  font-family: 'Open Sans', sans-serif;
+}
+ .invalid .error-message,
+ .empty .empty-message {
+  height: 20px;
+}
   </style>
 
 	<script src="js/jquery.js"></script>
@@ -116,12 +134,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form id="contact-form" action = "index1.jsp" method = "post">
+					<form id="contact-form" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Volunteer Form</span></h2>
 							</header>
 							<fieldset>
+									<label class="name">
+										<span class="text">Your Name:</span>
+										<%= request.getParameter("name") %>
+									</label>
+									<br><br>
+									<label class="email">
+										<span class="text">Email:</span>
+										<%= request.getParameter("email") %>
+									</label>
+									<br><br>
 									<label class="name">
 										<span class="text">Country:</span>
 										<%= request.getParameter("country") %>
@@ -133,8 +161,8 @@
 									</label>
 									<br><br>
 								<div class="cont_btn">
-									<!--<a href="volunteer.jsp" data-type="submit" class="btn">Back</a>-->
-									<a href="index1.jsp" data-type="submit" class="btn">Confirm</a>
+									<a href="volunteer.jsp" class="btn">Back</a>
+									<a href="index1.jsp" class="btn">Confirm</a>
 								</div>
 						</fieldset> 
 					</form>

@@ -45,7 +45,19 @@
 					<h1><a href="index.html">People for People</a><span>the foundation of love</span></h1>
 					<nav>
 						<ul class="sf-menu">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a>
+								<!--<ul>
+									<li><a href="#">Lorem ipsum</a></li>
+									<li><a href="#">Lorem ipsum</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Lorem ipsum</a></li>
+								</ul>-->
+							</li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="work.html">Our Work</a></li>
 							<li><a href="volunteer.html">I Want to Volunteer</a></li>
@@ -83,7 +95,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-					<form id="contact-form" action = "index2.html" method = "post">
+					<form id="contact-form" action = "contactReview.jsp" method = "post">
 						<div class="contact-form-loader"></div>
 							<header>
 								<h2><span>Contact Form</span></h2>
@@ -109,7 +121,7 @@
 									</label>
 									<label class="message">
 										<span class="text">Message:</span>
-										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=2,max=999999)'></textarea>
+										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*The message is too short.</span>
 									</label>
