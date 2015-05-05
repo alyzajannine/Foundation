@@ -25,24 +25,6 @@
     .hoverable:hover .hover {
       display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
     }
-    .empty-message,
- .error-message {
-  position: absolute;
-  right: 3px;
-  top: 2px;
-  color: #fa5555;
-  height: 0;
-  overflow: hidden;
-  font-size: 11px;
-  -webkit-transition: 0.3s ease-in height;
-  transition: 0.3s ease-in height;
-  z-index: 99;
-  font-family: 'Open Sans', sans-serif;
-}
- .invalid .error-message,
- .empty .empty-message {
-  height: 20px;
-}
   </style>
 
 	<script src="js/jquery.js"></script>
@@ -81,19 +63,7 @@
 					<h1><a href="index.html">People for People</a><span>the foundation of love</span></h1>
 					<nav>
 						<ul class="sf-menu">
-							<li><a href="index.jsp">Home</a>
-								<!--<ul>
-									<li><a href="#">Lorem ipsum</a></li>
-									<li><a href="#">Lorem ipsum</a>
-										<ul>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Lorem ipsum</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Lorem ipsum</a></li>
-								</ul>-->
-							</li>
+							<li><a href="index.jsp">Home</a></li>
 							<li><a href="about.jsp">About</a></li>
 							<li><a href="work.jsp">Our Work</a></li>
 							<li class="current"><a href="volunteer.jsp">I Want to Volunteer</a></li>
@@ -139,20 +109,6 @@
 							</header>
 							<fieldset>
 									<label class="name">
-										<span class="text">Your Name:</span>
-										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
-									</label>
-									<br><br>
-									<label class="email">
-										<span class="text">Your E-mail:</span>
-										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
-									</label>
-									<br><br>
-									<label class="name">
 										<span class="text">Country:</span>
 										<input type="text" name="country" placeholder="" value="" data-constraints="@Required @JustLetters" />
 											<span class="empty-message">*This field is required.</span>
@@ -161,7 +117,7 @@
 									<br><br>
 									<label class="message">
 										<span class="text">Skills/Talent:</span>
-										<textarea name="skills" placeholder="" data-constraints='@Required @Length(min=20,max=9999)'></textarea>
+										<textarea name="skills" placeholder="" data-constraints='@Required @Length(min=5,max=9999)'></textarea>
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*The message is too short.</span>
 									</label>

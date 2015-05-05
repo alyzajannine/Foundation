@@ -16,16 +16,12 @@
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
-		
-		<script>
-			alert("You must login first.");
-		</script>
     </head>
     <body>
         <div class="container">
             <!-- Codrops top bar -->
             <div class="codrops-top">
-                <a href="index.jsp">
+                <a href="index.html">
                     <strong>&laquo; Home </strong>
                 </a>
                 <div class="clr"></div>

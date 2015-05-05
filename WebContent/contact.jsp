@@ -10,6 +10,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
 
 	
 	<style>
@@ -26,27 +27,7 @@
     }
     .hoverable:hover .hover {
       display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
-    }
-    
-    .empty-message,
- .error-message {
-  position: absolute;
-  right: 3px;
-  top: 2px;
-  color: #fa5555;
-  height: 0;
-  overflow: hidden;
-  font-size: 11px;
-  -webkit-transition: 0.3s ease-in height;
-  transition: 0.3s ease-in height;
-  z-index: 99;
-  font-family: 'Open Sans', sans-serif;
-}
- .invalid .error-message,
- .empty .empty-message {
-  height: 20px;
-}
-    
+    }    
     
 }
   </style>
@@ -87,19 +68,7 @@
 					<h1><a href="index.jsp">People for People</a><span>the foundation of love</span></h1>
 					<nav>
 						<ul class="sf-menu">
-							<li><a href="index.jsp">Home</a>
-								<!--<ul>
-									<li><a href="#">Lorem ipsum</a></li>
-									<li><a href="#">Lorem ipsum</a>
-										<ul>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Lorem ipsum</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Lorem ipsum</a></li>
-								</ul>-->
-							</li>
+							<li><a href="index.jsp">Home</a></li>
 							<li><a href="about.jsp">About</a></li>
 							<li><a href="work.jsp">Our Work</a></li>
 							<li><a href="volunteer.jsp">I Want to Volunteer</a></li>
@@ -149,18 +118,6 @@
 								<h2><span>Contact Form</span></h2>
 							</header>
 							<fieldset>
-									<label class="name">
-										<span class="text">Your Name:</span>
-										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
-									</label>
-									<label class="email">
-										<span class="text">Your E-mail:</span>
-										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
-									</label>
 									<label class="phone">
 										<span class="text">Contact Number:</span>
 										<input type="text" name="phone" placeholder="" value="" data-constraints="@Required @JustNumbers" />
@@ -169,7 +126,7 @@
 									</label>
 									<label class="message">
 										<span class="text">Message:</span>
-										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=2,max=999999)'></textarea>
 										<span class="empty-message">*This field is required.</span>
 										<span class="error-message">*The message is too short.</span>
 									</label>
@@ -178,19 +135,6 @@
 									<a href="#" data-type="submit" class="btn">Send</a>
 								</div>
 						</fieldset> 
-						<div class="modal fade response-message">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title">Modal title</h4>
-									</div>
-									<div class="modal-body">
-										You message has been sent! We will be in touch soon.
-									</div>
-								</div>
-							</div>
-						</div>
 					</form>
 				</div>
 				<div class="grid_6 preffix_1">
